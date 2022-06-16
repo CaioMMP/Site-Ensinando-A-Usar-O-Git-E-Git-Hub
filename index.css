@@ -1,0 +1,31 @@
+body {
+    color: black;
+    background-color: white;
+    margin: 0;
+    background-size: 100%;
+}
+h1 {
+    text-align: center;
+}
+.bordas {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    height: 10000px;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+.margem {
+    margin: 50px;
+}
+header {
+    width: 100%;
+    background-color: #252323;
+    position: relative;
+}
+.tamanho {
+    font-size: 300%;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+    padding: 25px;
+}

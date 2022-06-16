@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Ensinando GitHub</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <header>
+    <h1 class="tamanho">Te Ensinando a Usar GitHub</h1>
+    </header>
+
+    <div class="bordas">
+    <div class="margem">
+
+    <!--Sumário com os links para os textos-->
+    <ol type="1">
+        <li>
+            <p><a href="#download">Como Fazer O Download</a>;</p><br>
+        </li>
+    </ol>
+
+    <!--Textos com os IDs-->
+    <p id="download">Como Fazer O Download:<br>
+        &emsp;Acesse o site do Git pesquisando no próprio Google ou usando o link.<br>
+        &emsp;Depois escolha o seu Sistema Operacional e faça a instalação do Git 32 ou 64 bits dependendo da configuração do seu computador.<br>
+        &emsp;Assim execute o arquivo baixado e intale o Git; na opção final selecione apenas Launch Git Bash, com ele podemos usar os comandos e controlar os repositórios.<br>
+        &emsp;Com o comando git --version mostra-se a versão do git instalada.<br>
+    </p>
+    <br>
+    <p id="pasta">Escolhendo a pasta:<br>
+        &emsp;Escolha a pasta que deseja colocar no seu git.<br>
+        &emsp;Clique com o botão direito do mouse nela e escolha a opção abrir com o Code(Visual Studio Code), ou abra normalmente no seu VSCode.<br>
+    </p>
+    <br>
+    <p id="readme">Arquivo Readme.md:<br>
+        &emsp;Crie um arquivo com estenção .md(mark down => linguagem de marcação para readmes), de preferência Readme.md, e dentro dele você vai colocar as instruções e tudo que você precisa de informação.<br>
+    </p>
+    <br>
+    <p id="gitBash">Acessando o Git Bash:<br>
+        &emsp;Na pasta que escolheu, clique com o botão direito e escolha a opção Git Bash Here, e isso abrirá o git bash; ele deve estar na pasta escolhida.<br>
+        Ex.: <br>
+        PC-USER@DESKTOP-ABUVNPB MINGW64 /k/caio/Programador/Meus Programas/Linguagens de Programações/HTML/Ideias de Sites/Site Ensinando a Usar GitHub <br>
+        $ <br>
+    </p>
+    <br>
+    <p id="gitinit">Comando "git init":<br>
+        &emsp;Inicializa um repositório git vazio na sua pasta.<br>
+        &emsp;Quando roda esse comando aparece = "(master)", que significa que já está dentro da nossa Branch master; que é aquela que quando criamos o repositório ela é criada automaticamente, a principal. <br>
+        &emsp;Esse comando cria uma pasto oculta chamada git na sua pasta. <br>
+        Ex.: <br>
+        PC-USER@DESKTOP-ABUVNPB MINGW64 /k/caio/Programador/Meus Programas/Linguagens de Programações/HTML/Ideias de Sites/Site Ensinando a Usar GitHub <br>
+        <p class="cor">$ git init</p> <br>
+        Initialized empty Git repository in K:/caio/Programador/Meus Programas/Linguagens de Programações/HTML/Ideias de Sites/Site Ensinando a Usar GitHub/.git/ <br>
+        <br>
+        PC-USER@DESKTOP-ABUVNPB MINGW64 /k/caio/Programador/Meus Programas/Linguagens de Programações/HTML/Ideias de Sites/Site Ensinando a Usar GitHub (master) <br>
+        $ <br>
+    </p>
+    <p id="gitadd">Comando "git add":<br>
+        &emsp;Acabamos de criar um repositório vazio na nossa pasta. Só que esse repositório não tem nenhum commit(versões que fazemos dos nossos arquivos), e precisamos de sua primeira versão para depois começarmos a editar. Para isso usaremos o comando "git add", que manda os arquivos para área de standing, significa que um arquivo fica esperando para ser rodado enquanto outro já está sendo.<br>
+        &emsp;Para esse comando precisaremos de um complemento que será o nome do arquivo que vamos mandar para essa área de stading.<br>
+        Ex.: <br>
+        PC-USER@DESKTOP-ABUVNPB MINGW64 /k/caio/Programador/Meus Programas/Linguagens de Programações/HTML/Ideias de Sites/Site Ensinando a Usar GitHub (master)
+        <p class="cor">$ git add Readme.md </p>
+    </p>
+    <p id="gitstatus">Comando "git status": <br>
+        &emsp;Esse comando mostra para gente as mudanças a serem commitadas. <br>
+        Ex.: <br>
+        PC-USER@DESKTOP-ABUVNPB MINGW64 /k/caio/Programador/Meus Programas/Linguagens de Programações/HTML/Ideias de Sites/Site Ensinando a Usar GitHub (master)
+        <p class="cor">$ git status </p>
+        On branch master <br>
+        <br>
+        No commits yet <br>
+        <br>
+        Changes to be committed: <br>
+            &emsp;(use "git rm --cached <file>..." to unstage) <br>
+                &emsp;&emsp;new file:   Readme.md <br>
+        <br>
+        Untracked files: <br>
+            &emsp;(use "git add <file>..." to include in what will be committed) <br>
+                &emsp;&emsp;index.css <br>
+                &emsp;&emsp;index.html <br>
+                &emsp;&emsp;index.js <br>
+    </p>
+    <p id="gitcommit">Comando "git commit": <br>
+        &emsp;Depois de jogar os arquivos para área de stading, precisamos comita-los. Fazer o processo de adicionar(add) e commitar(commit) também servirá para quando for atualizar os arquivos presentes no git.<br>
+        &emsp;Para dar o commit utilizamos o código: git commit -m "[mensagem do primeiro commit]" <br>
+        Ex.: <br>
+        PC-USER@DESKTOP-ABUVNPB MINGW64 /k/caio/Programador/Meus Programas/Linguagens de Programações/HTML/Ideias de Sites/Site Ensinando a Usar GitHub (master)
+        <p class="cor">$ git commit -m "primeiro commit" </p>
+        [master (root-commit) 2b30e68] primeiro commit <br>
+        4 files changed, 122 insertions(+)<br>
+        create mode 100644 Readme.md <br>
+        create mode 100644 index.css<br>
+        create mode 100644 index.html<br>
+        create mode 100644 index.js<br>
+    </p>
+    <p id="gitmain">Alterando master para main: <br>
+        &emsp;O git tem mudado a nomenclatura da branch principal, que é master, para main, é apenas um outro nome que estão migrando.<br>
+        &emsp;O comando para fazer essa alteração é: git branch -M "main".<br>
+        Ex.: <br>
+        PC-USER@DESKTOP-ABUVNPB MINGW64 /k/caio/Programador/Meus Programas/Linguagens de Programações/HTML/Ideias de Sites/Site Ensinando a Usar GitHub (master)
+        <p class="cor">$ git branch -M "main" </p>
+        PC-USER@DESKTOP-ABUVNPB MINGW64 /k/caio/Programador/Meus Programas/Linguagens de Programações/HTML/Ideias de Sites/Site Ensinando a Usar GitHub (main) <br>
+        $<br>
+    </p>
+    <p id="interface">GUI clients: <br>
+        &emsp;Guia do git para dar um esclarecimento do que está acontecendo por trás dos códigos:<br>
+        <a href="https://git-scm.com/downloads/guis">https://git-scm.com/downloads/guis</a>
+        &emsp;No próprio git hub também tem como ter essa noção do que acontece.<br>
+    </p>
+    <p id="interface">GUI clients: <br>
+        &emsp;Guia do git para dar um esclarecimento do que está acontecendo por trás dos códigos:<br>
+        <a href="https://git-scm.com/downloads/guis">https://git-scm.com/downloads/guis</a>
+        &emsp;No próprio git hub também tem como ter essa noção do que acontece.<br>
+    </p>
+    <p id="repositorio">Criando repositório no Git Hub: <br>
+        &emsp;Entre no Git Hub, e, caso não tenha, crie uma conta na plataforma.<br>
+        &emsp;Estando no seu perfil, clique em repositories na barra superior do perfil. Depois clique no botão new da cor verde e preencha com as informações.<br>
+        &emsp;A criação de outro repositório dentro do Git Hub é necessária para que tudo que há de informação no repositório da nossa máquina vá para o repositório da git hub também; ele é uma plataforma para hospedarmos os códigos, assim quando for utilizar outra máquina é só ir no git hub e puxar os arquivos desses códigos por meio de downloads. <br>
+        &emsp;Depois de preenchidas as informações aperte em create e pronto, seu repositório no git hub está criado!!! <br>
+    </p>
+    <p id="gitremote">Comando "git remote": <br>
+        &emsp;Na parte quick setup vai ter um link, ele tem um padrão que é o github.com/[seu username]/[nome do repositório].git.<br>
+        &emsp;Você vai usar esse link neste código: git remote add origin [link.git]<br>
+        Ex.: <br>
+        PC-USER@DESKTOP-ABUVNPB MINGW64 /k/caio/Programador/Meus Programas/Linguagens de Programações/HTML/Ideias de Sites/Site Ensinando a Usar GitHub (main)
+        <p class="cor">$ git remote add origin https://github.com/CaioMMP/Site-Ensinando-A-Usar-O-Git-GitHub.git</p>
+    </p>
+    <p id="gitpush">Comando "git push": <br>
+        &emsp;Comando para adicionar os códigod: git push -u origin main<br>
+        &emsp;É como se "empurra-se" os commit's que estão no repositório local para o repositório do git hub.<br>
+        Ex.: <br>
+        PC-USER@DESKTOP-ABUVNPB MINGW64 /k/caio/Programador/Meus Programas/Linguagens de Programações/HTML/Ideias de Sites/Site Ensinando a Usar GitHub (main)
+        <p class="cor">$ git push -u origin main</p>
+    </p>
+    </div>
+    </div>
+
+</body>
+
+</html>
